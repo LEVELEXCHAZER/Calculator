@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>HTML Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- For styling -->
+ <style>
+  table {
+   border:5px solid rgb(44, 42, 42);
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  input[type="button"] {
+   width: 100%;
+   padding: 20px 40px;
+   background-color: rgb(3, 42, 39);
+   color: rgb(156, 175, 186);
+   font-size: 24px;
+   font-weight: bold;
+   border: none;
+   border-radius: 5px;
+  }
+  
+  input[type="text"] {
+   padding: 20px 30px;
+   font-size: 24px;
+   font-weight: bold;
+   border: none;
+   border-radius: 5px;
+   border: 3px solid rgb(54, 49, 49);
+  }
+ </style>
+</head>
+
+<body>
+
+ <!-- Create table -->
+ <table id="calcu">
+  <tr>
+   <td colspan="3">
+    <input id="result" type="text" id="result">
+   </td>
+   <td><input onclick="allClear()" type="button" value="c"></td>
+  </tr>
+
+  <tr>
+   <td><input type="button" onclick="displaydata(1)" value="1"></td>
+   <td><input type="button" onclick="displaydata(2)" value="2"></td>
+   <td><input type="button" onclick="displaydata(3)" value="3"></td>
+   <td><input type="button" onclick="displaydata('/')" value="/"></td>
+  </tr>
+  <tr>
+   <td><input type="button" onclick="displaydata(4)" value="4"></td>
+   <td><input type="button"onclick="displaydata(5)" value="5"></td>
+   <td><input type="button" onclick="displaydata(6)" value="6"></td>
+   <td><input type="button" onclick="displaydata('*')" value="*"></td>
+  </tr>
+  <tr>
+   <td><input type="button" onclick="displaydata(7)" value="7"></td>
+   <td><input type="button" onclick="displaydata(8)" value="8"></td>
+   <td><input type="button" onclick="displaydata(9)" value="9"></td>
+   <td><input type="button" onclick="displaydata('-')" value="-"></td>
+  </tr>
+  <tr>
+   <td><input type="button" onclick="displaydata(0)" value="0"></td>
+   <td><input type="button" onclick="displaydata('.')" value="."></td>
+   <td><input type="button" onclick="findOut()" value="="></td>
+   <td><input type="button" onclick="displaydata('+')" value="+"></td>
+
+  </tr>
+        <tr>
+            <td><input type="button" onclick="" value=""></td>
+            <td><input type="button" onclick="" value=""></td>
+            <td><input type="button" onclick="" value=""></td>
+
+            <td><input type="button" onclick="backspace()" value="⌫"></td>
+            
+
+        </tr>
+ </table>
+</body>
+<script src="./Calc.js"></script>
+</html>
